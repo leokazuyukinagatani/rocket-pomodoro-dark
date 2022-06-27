@@ -4,31 +4,66 @@ import Sounds from './sounds.js';
 import Events from './events.js';
 
 import {
+  body,
   buttonTree,
   buttonRain,
   buttonCity,
   buttonCamp,
+  buttonLight,
+  buttonDark,
+  timeDisplay,
   minutesDisplay,
   secondsDisplay,
+  cardCamp,
+  cardCity,
+  cardRain,
+  cardTree,
   iconPlay,
+  iconStop,
+  iconInc,
+  iconDec,
   iconRain,
   iconCity,
   iconTree,
   iconCamp,
+  iconDark,
+  iconLight,
+  inputCamp,
+  inputRain,
+  inputCity,
+  inputTree,
+
 } from './elements.js';
 
 
 const controls = Controls(
   {
+    body,
     iconPlay,
+    iconStop,
+    iconInc,
+    iconDec,
     iconCamp,
     iconCity,
     iconRain,
     iconTree,
+    iconDark,
+    iconLight,
     buttonCamp,
     buttonCity,
     buttonRain,
-    buttonTree
+    buttonTree,
+    buttonDark,
+    buttonLight,
+    timeDisplay,
+    cardCamp,
+    cardCity,
+    cardRain,
+    cardTree,
+    inputTree,
+    inputCamp,
+    inputCity,
+    inputRain
 
   }
 );

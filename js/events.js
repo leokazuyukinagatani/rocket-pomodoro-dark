@@ -7,11 +7,14 @@ import {
   buttonCamp,
   buttonCity,
   buttonRain,
+  buttonDark,
+  buttonLight,
   iconPlay,
   inputTree,
   inputCamp,
   inputCity,
   inputRain,
+
   
 } from "./elements.js";
 
@@ -110,6 +113,11 @@ export default function Events (
     }
   }
 
+  const mode = () => {
+    controls.mode();
+    
+  }
+
   const volumeTree = () => {
     sound.setVolumeTree(inputTree.value);
   }
@@ -149,11 +157,10 @@ export default function Events (
 
   inputRain.addEventListener('input', volumeRain);
 
+  buttonLight.addEventListener('click', mode);
+
+  buttonDark.addEventListener('click', mode);
 
 
-
-
-  return({
-  });
 }
 
