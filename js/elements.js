@@ -21,6 +21,10 @@ const buttonCamp = document.querySelector('.camp');
 const minutesDisplay = document.querySelector('.minutes');
 const secondsDisplay = document.querySelector('.seconds');
 
+const inputTree = document.querySelector('#inputTree');
+const inputCamp = document.querySelector('#inputCamp');
+const inputCity = document.querySelector('#inputCity');
+const inputRain = document.querySelector('#inputRain');
 export {
   buttonPlay,
   buttonStop,
@@ -36,5 +40,9 @@ export {
   iconRain,
   iconCity,
   iconTree,
-  iconCamp
+  iconCamp,
+  inputTree,
+  inputCamp,
+  inputCity,
+  inputRain,
 }

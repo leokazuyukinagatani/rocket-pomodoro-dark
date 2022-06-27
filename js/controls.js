@@ -18,6 +18,10 @@ export default function Controls(
     iconPlay.classList.toggle('active-button');
   }
 
+  const reset = () => {
+    iconPlay.classList.remove('active-button');
+  }
+
   const camp = () => {
     buttonCamp.classList.toggle('active');
     iconCamp.classList.toggle('active-icon');
@@ -40,6 +44,6 @@ export default function Controls(
   }
   
 
-  return( { play, camp, city, rain, tree } );
+  return( { play, camp, city, rain, tree, reset } );
 }
 

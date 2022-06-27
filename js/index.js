@@ -14,7 +14,7 @@ import {
   iconRain,
   iconCity,
   iconTree,
-  iconCamp
+  iconCamp,
 } from './elements.js';
 
 

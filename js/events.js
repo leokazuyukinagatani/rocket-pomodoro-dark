@@ -8,6 +8,11 @@ import {
   buttonCity,
   buttonRain,
   iconPlay,
+  inputTree,
+  inputCamp,
+  inputCity,
+  inputRain,
+  
 } from "./elements.js";
 
 export default function Events (
@@ -34,7 +39,7 @@ export default function Events (
 
   const stop = () => {
     timer.hold();
-    controls.play();
+    controls.reset();
     timer.updateMinutes(minutes);
     sound.pressButton();
   }
@@ -47,6 +52,9 @@ export default function Events (
       timer.updateDisplay(minutes,seconds);
     }
     sound.pressButton();
+
+    sound.setVolumeRain(0.5);
+
 
    
   }
@@ -102,7 +110,19 @@ export default function Events (
     }
   }
 
+  const volumeTree = () => {
+    sound.setVolumeTree(inputTree.value);
+  }
 
+  const volumeCamp = () => {
+    sound.setVolumeCamp(inputCamp.value);
+  }
+  const volumeCity = () => {
+    sound.setVolumeCity(inputCity.value);
+  }
+  const volumeRain = () => {
+    sound.setVolumeRain(inputRain.value);
+  }
  
 
   buttonPlay.addEventListener('click', play );
@@ -120,6 +140,18 @@ export default function Events (
   buttonCamp.addEventListener('click', camp);
 
   buttonRain.addEventListener('click', rain);
+
+  inputTree.addEventListener('input', volumeTree);
+
+  inputCamp.addEventListener('input', volumeCamp);
+
+  inputCity.addEventListener('input', volumeCity);
+
+  inputRain.addEventListener('input', volumeRain);
+
+
+
+
 
   return({
   });

@@ -49,7 +49,18 @@ export default function() {
   function pressButton() {
     buttonPressAudio.play();
   }
-
+  function setVolumeTree(volume) {
+    treeAudio.volume = volume;
+  }
+  function setVolumeCamp(volume) {
+    campAudio.volume = volume;
+  }
+  function setVolumeCity(volume) {
+    cityAudio.volume = volume;
+  }
+  function setVolumeRain(volume) {
+    rainAudio.volume = volume;
+  }
   return {
     initTree,
     stopTree,
@@ -60,7 +71,11 @@ export default function() {
     initCamp,
     stopCamp,
     finishPlay,
-    pressButton
+    pressButton,
+    setVolumeCamp,
+    setVolumeTree,
+    setVolumeCity,
+    setVolumeRain
   }
 };
 
