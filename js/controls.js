@@ -41,13 +41,20 @@ export default function Controls(
   }
 
   const camp = () => {
-
+    
     buttonCamp.classList.toggle('active');
+    cardCamp.classList.toggle('active');
     iconCamp.classList.toggle('active-icon');
+    if(buttonCamp.classList.contains('dark-bg')){
+      buttonCamp.classList.toggle('active');
+      buttonCamp.classList.toggle('dark-bg');
+      cardCamp.classList.toggle('active');
+    }
   }
 
   const city = () => {
     buttonCity.classList.toggle('active');
+    cardCity.classList.toggle('active');
     iconCity.classList.toggle('active-icon');
   }
 
@@ -59,6 +66,7 @@ export default function Controls(
 
   const tree = () => {
     buttonTree.classList.toggle('active');
+    cardTree.classList.toggle('active');
     iconTree.classList.toggle('active-icon');
 
   }
@@ -82,7 +90,10 @@ export default function Controls(
     body.classList.toggle('dark-mode');
     iconMode();
     timeDisplay.classList.toggle('dark-fc');
-    
+    cardCamp.classList.toggle('dark-bg');
+    cardCity.classList.toggle('dark-bg');
+    cardRain.classList.toggle('dark-bg');
+    cardTree.classList.toggle('dark-bg');
   }
   
 
