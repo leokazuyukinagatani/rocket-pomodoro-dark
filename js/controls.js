@@ -33,67 +33,59 @@ export default function Controls(
 {
 
   const play = () => {
-    iconPlay.classList.toggle('active-button');
+    iconPlay.classList.toggle('active');
   }
 
   const reset = () => {
-    iconPlay.classList.remove('active-button');
+    iconPlay.classList.remove('active');
   }
 
   const camp = () => {
-    
-    buttonCamp.classList.toggle('active');
     cardCamp.classList.toggle('active');
-    iconCamp.classList.toggle('active-icon');
-    if(buttonCamp.classList.contains('dark-bg')){
-      buttonCamp.classList.toggle('active');
-      buttonCamp.classList.toggle('dark-bg');
-      cardCamp.classList.toggle('active');
-    }
+    iconCamp.classList.toggle('icon-color');
+    inputCamp.classList.toggle('no-display');
+
   }
 
   const city = () => {
-    buttonCity.classList.toggle('active');
     cardCity.classList.toggle('active');
-    iconCity.classList.toggle('active-icon');
+    iconCity.classList.toggle('icon-color');
+    inputCity.classList.toggle('no-display');
+
   }
 
   const rain = () => {
-    buttonRain.classList.toggle('active');
     cardRain.classList.toggle('active');
-    iconRain.classList.toggle('active-icon');
+    iconRain.classList.toggle('icon-color');
+    inputRain.classList.toggle('no-display');
+
   }
 
   const tree = () => {
-    buttonTree.classList.toggle('active');
     cardTree.classList.toggle('active');
-    iconTree.classList.toggle('active-icon');
+    iconTree.classList.toggle('icon-color');
+    inputTree.classList.toggle('no-display');
 
   }
   
   const iconMode = () => {
-    iconTree.classList.toggle('active-icon');
-    iconRain.classList.toggle('active-icon');
-    iconCamp.classList.toggle('active-icon');
-    iconCity.classList.toggle('active-icon');
-    iconLight.classList.toggle('active-icon');
-    iconDark.classList.toggle('active-icon');
-    iconPlay.classList.toggle('active-icon');
-    iconStop.classList.toggle('active-icon');
-    iconInc.classList.toggle('active-icon');
-    iconDec.classList.toggle('active-icon');
+    iconTree.classList.toggle('icon-color');
+    iconRain.classList.toggle('icon-color');
+    iconCamp.classList.toggle('icon-color');
+    iconCity.classList.toggle('icon-color');
+    iconLight.classList.toggle('icon-color');
+    iconDark.classList.toggle('icon-color');
+    iconPlay.classList.toggle('icon-color');
+    iconStop.classList.toggle('icon-color');
+    iconInc.classList.toggle('icon-color');
+    iconDec.classList.toggle('icon-color');
   }
 
   const mode = () => {
-    buttonLight.classList.toggle('no-display-icon');
-    buttonDark.classList.toggle('no-display-icon');
-    body.classList.toggle('dark-mode');
-    iconMode();
-    timeDisplay.classList.toggle('dark-fc');
-    cardCamp.classList.toggle('dark-bg');
-    cardCity.classList.toggle('dark-bg');
-    cardRain.classList.toggle('dark-bg');
-    cardTree.classList.toggle('dark-bg');
+    buttonLight.classList.toggle('no-display');
+    buttonDark.classList.toggle('no-display');
+    body.classList.toggle('dark');
+    
   }
   
 

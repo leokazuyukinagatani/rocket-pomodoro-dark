@@ -3,6 +3,10 @@ import {
   buttonStop,
   buttonAdd,
   buttonSub,
+  cardTree,
+  cardCamp,
+  cardCity,
+  cardRain,
   buttonTree,
   buttonCamp,
   buttonCity,
@@ -32,7 +36,7 @@ export default function Events (
     sound.pressButton();
     
     controls.play();
-    if(iconPlay.classList.contains('active-button')){
+    if(iconPlay.classList.contains('active')){
       timer.countDown();
     }else{
       timer.hold();
@@ -75,7 +79,7 @@ export default function Events (
   const tree = () => {
     
     controls.tree();
-    if(buttonTree.classList.contains('active')){
+    if(cardTree.classList.contains('active')){
       sound.initTree();
     }else{
       sound.stopTree();
@@ -86,7 +90,7 @@ export default function Events (
   const city = () => {
   
     controls.city();
-    if(buttonCity.classList.contains('active')){
+    if(cardCity.classList.contains('active')){
       sound.initCity();
     }else{
       sound.stopCity();
@@ -96,7 +100,7 @@ export default function Events (
   const camp = () => {
 
     controls.camp();
-    if(buttonCamp.classList.contains('active')){
+    if(cardCamp.classList.contains('active')){
       sound.initCamp();
     }else{
       sound.stopCamp();
@@ -106,7 +110,7 @@ export default function Events (
   const rain = () => {
     
     controls.rain();
-    if(buttonRain.classList.contains('active')){
+    if(cardRain.classList.contains('active')){
       sound.initRain();
     }else{
       sound.stopRain();
